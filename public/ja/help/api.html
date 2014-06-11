@@ -1,0 +1,78 @@
+﻿<!-- # Header -->
+<div class="header">
+	<div class="header-body">
+		<div class="logo-wrapper">
+			<a href="#!page=top" class="logo"><img src="http://ts.plus-place.org/packages/twitter-search/img/mini-logo.png" alt="Twitter Search" class="logo" data-change-id="home-container" /></a>
+		</div>
+	</div>
+</div>
+			
+<!-- # Body -->
+<div class="body">
+	
+	<div class="menu-wrapper">
+		<div class="menu">
+			<div class="menu-button">
+				<a href="#!page=top#" title="トップページ"><img src="http://ts.plus-place.org/packages/twitter-search/img/home.png" alt="" /></a>
+				<a href="#!page=cache" title="キャッシュの参照"><img src="http://ts.plus-place.org/packages/twitter-search/img/cache.png" alt="" /></a>
+			</div>
+		</div>
+	</div>
+				
+	<!-- # Main area -->
+	<div class="contents">
+		<ul class="menu-bar">
+			<li class="menu-deactive" onmousedown="gfxt.sys('hash_monitor').setHash('#!page=help;section=operation')">操作方法</li>
+			<li class="menu-active">Twitter API</li>
+			<li class="menu-deactive" onmousedown="gfxt.sys('hash_monitor').setHash('#!page=help;section=browsers')">対応ブラウザ</li>
+		</ul>
+		<div class="main-section">
+			<p style="font-size:16px; font-weight: bold">
+				Twitter API の消費
+			</p>
+			<p class="paragraph">
+				　Twitter Search は、ツイート検索の際に Twitter API を最大10個消費します。このため、1時間につき15回ほど検索可能です。ただし、日付指定を最新のツイートが生成された日より先に設定した場合、検索中に条件と合致したツイートが発見された場合、キャッシュ内で発見された場合、ユーザーが存在しない場合は1～10個の範囲で消費されます。
+			</p>
+			<p class="paragraph">
+				　現在、この検索システムが検索可能な範囲は最新から2000個までの過去のツイートです。それ以上の検索は可能ですが、 Twitter API の消費が著しくなり実用的でないため制限しています。一般的に Twitter が規制しているAPI数はIP判別で150回です。
+			</p>
+			<br />
+			<p style="font-size:16px; font-weight: bold">
+				Twitter REST API の使用
+			</p>
+			<p class="paragraph">
+				　ツイートデータは検索対象のユーザー・タイムラインから取得します。REST API は「GET statuses/user_timeline」を使用します。page パラメータで取得範囲を指定し、一回のリクエストで 200個のツイートデータをレシーブしています。レシーブしたデータはキャッシュに一時保存され、API数の消費を抑えます。なお、この REST API を使用して、保護されたユーザーのタイムラインを取得することはできません。
+			</p>
+			<p class="paragraph">
+				　REST API については Twitter Developers のドキュメンテーションを参照してください。
+			</p>
+			<p class="view-link">
+				&nbsp;&nbsp;&nbsp;Twitter Developers "GET statuses/user_timeline":<br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://dev.twitter.com/docs/api/1/get/statuses/user_timeline" target="_blank" title="Twitter Developers" class="view-link-a">https://dev.twitter.com/docs/api/1/get/statuses/user_timeline</a><br />
+			</p>
+		</div>
+	</div>
+</div>
+			
+<!-- Footer -->
+<div class="footer">
+	<div class="footer-body">
+		<!-- # Address -->
+		<div class="address">
+			<a href="#!page=about;section=us">Twitter Search について</a>
+			<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+			<a href="#!page=help;section=operation">ヘルプ</a>
+			<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+			<a href="#!page=terms;section=tos">利用規約</a>
+			<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+			<a href="#!page=privacy;section=policy">プライバシーポリシー</a>
+			<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+			<a href="http://www.facebook.com/pages/Place-project/172154506171999" target="_blank">Facebook</a>
+			<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+			<a href="https://twitter.com/plus_place" target="_blank">Twitter</a>
+			<br /><br />
+			<img src="http://ts.plus-place.org/packages/twitter-search/img/plus-place.png" alt="" /><br />
+			&copy; 2011 plus-place project
+		</div>
+	</div>
+</div>

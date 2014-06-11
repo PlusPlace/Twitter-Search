@@ -1,0 +1,747 @@
+﻿@charset "UTF-8";
+
+
+/*************************
+ *  Global Property
+ */
+
+/** [ html ] **/
+html {
+	height: 100%;
+}
+
+
+/** [ body ] **/
+body {
+	height: 100%;
+	margin: 0px;
+	background: url(../img/bg.png);
+	text-align: center;
+}
+
+
+/** [ default property ] **/
+div, table, tr, td, a, span, input, option {
+	font: normal normal 100 14px/normal "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+a{
+	color: #626262;
+}
+
+a:hover{
+	color: #000000;
+}
+
+img{
+	border: none;
+}
+
+code[data-script-code="text/javascript"]{
+	display: none;
+}
+
+
+/** [ Logo ] **/
+.logo{
+	text-decoration: none;
+}
+
+.logo-img{
+	cursor: pointer;
+	border: none;
+}
+
+
+
+/*************************
+ *  Loading
+ */
+#loading-page{
+	width: 100%;
+	height: 100%;
+	background: transparent url(../img/ajax-loader-info.gif) no-repeat center center;
+}
+
+
+
+/*************************
+ *  Home container
+ */
+#home-container{
+	display: none;
+}
+
+
+/** [ Home ] **/
+#home-body{
+	width: 100%;
+	position: absolute;
+}
+
+
+/** [ Wrapper ] **/
+.home-wrapper{
+	width: 100%;
+	padding: 20px 0px 40px 0px;
+	background: #FFFFFF;
+}
+
+
+/** [ Contents ] **/
+.home-contents{
+	width: 900px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/** [ Main ] **/
+.home-main{
+	width: 750px;
+	float: left;
+}
+
+.home-right-sidebar{
+	width: 150px;
+	float: left;
+}
+
+
+/** [ Logo ] **/
+.home-logo-wrapper{
+	padding:40px 0px 20px 0px;
+}
+
+
+/** [ Menu ] **/
+.home-menu-wrapper{
+	width: 100%;
+	height: 50px;
+	background-color: #52799E;
+}
+
+.home-menu{
+	color: #FFFFFF;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+.home-menu a img{
+	border-radius: 3px;
+	border: 1px solid #52799E;
+	margin-top: 4px;
+}
+
+.home-menu a img:hover{
+	border: 1px solid #6F9BC8;
+	background-color:#6F9BC8;
+}
+
+
+/** [ Username ] **/
+.home-username{
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+.home-username-text{
+	font-size: 17px;
+	width: 500px;
+	height: 30px;
+	margin-top:20px;
+	margin-left: 125px;
+	border: 2px solid #52799E;
+}
+
+
+/** [ Date ] **/
+.home-date{
+	text-align: left;
+}
+
+.home-date-text{
+	width: 250px;
+	height: 20px;
+	margin-left: 125px;
+	border: 1px solid #52799E;
+}
+
+.home-input-calendar{
+	padding-left: 125px;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+
+/** [ Button ] **/
+.home-button{
+	text-align: right;
+}
+
+.home-search-button{
+	cursor: pointer;
+	width: 100px;
+	height: 50px;
+	border: 1px solid #52799E;
+	border-radius: 5px;
+	margin-right: 120px;
+	background: #52799E url(../img/search.png) no-repeat center center;
+}
+
+.home-search-button:hover{
+	border: 1px solid #6F9BC8;
+}
+
+
+/** [ Address ] **/
+.home-address-wrapper{
+	color: #52799E;
+	width: 900px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	text-decoration: none;
+	clear: both;
+}
+
+.home-address{
+	font-size: 12px;
+}
+
+.home-address a{
+	font-size: 12px;
+	text-decoration: none;
+}
+
+
+
+/*************************
+ *  Result container
+ */
+#result-container{
+	display: none;
+}
+
+
+/** [ Header ] **/
+.header{
+	width: 100%;
+	height: 80px;
+}
+
+.header-body{
+	width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+
+/** [ Logo ] **/
+.logo-wrapper{
+	float: left;
+}
+
+
+/** [ Body ] **/
+.body{
+	width: 100%;
+	padding: 0px 0px 40px 0px;
+	background: #FFFFFF;
+	overflow: hidden;
+}
+
+
+/** [ Contents ] **/
+.contents{
+	width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	text-align: left;
+}
+
+
+/** [ Main ] **/
+.main{
+	width: 700px;
+	height: 100%;
+	margin-top: 10px;
+	margin-left: 50px;
+	margin-right: 50px;
+	float: left;
+}
+
+
+/** [ Menu ] **/
+.menu-wrapper{
+	width: 100%;
+	height: 50px;
+	background-color: #52799E;
+}
+
+.menu{
+	color: #FFFFFF;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+.menu a img{
+	border-radius: 3px;
+	border: 1px solid #52799E;
+	margin-top: 4px;
+}
+
+.menu a img:hover{
+	border: 1px solid #6F9BC8;
+	background-color:#6F9BC8;
+}
+
+.menu-search{
+	width:400px;
+	float:left;
+}
+
+.menu-button{
+	width: 500px;
+	float: left;
+}
+
+
+/** [ Status ] **/
+.status-wrapper{
+	width: 100%;
+	padding-top: 25px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #A2A2A2;
+}
+
+.status{
+	width:950px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+#status-number{
+	color: #ef4f00;
+	font-size: 16px;
+	margin-left: 30px;
+}
+
+#status-username{
+	color: #A2A2A2;
+}
+
+#status-date{
+	color: #A2A2A2;
+}
+
+#status-page{
+	margin-left: 10px;
+}
+
+
+/** [ Search ] **/
+.search{
+	margin-top: 28px;
+	margin-left: 50px;
+	float: left;
+}
+
+
+/** [ Date ] **/
+.date{
+	float: left;
+}
+
+.date-text{
+	font-size: 12px;
+	width: 100px;
+	height: 20px;
+	margin-left: 10px;
+	border-radius: 3px;
+	border: 1px solid #52799E;
+}
+
+.input-calendar{
+	z-index: 10;
+	color: #000000;
+	padding-left: 10px;
+	position: relative;
+}
+
+
+/** [ Username ] **/
+.username{
+	float: left;
+}
+
+.username-text{
+	font-size: 12px;
+	width: 200px;
+	height: 20px;
+	border-radius: 3px;
+	border: 1px solid #52799E;
+}
+
+
+/** [ Button ] **/
+.button{
+	float: left;
+}
+
+.search-button{
+	cursor: pointer;
+	font-size: 11px;
+	width: 35px;
+	height: 25px;
+	border: 1px solid #52799E;
+	border-radius: 3px;
+	background: #52799E url(../img/search_mini.png) no-repeat center center;
+}
+
+.search-button:hover{
+	border: 1px solid #6F9BC8;
+	background-color: #6F9BC8;
+}
+
+
+/** [ Message ] **/
+#message{
+	width: 100%;
+	text-align: left;
+}
+
+
+/** [ Loading ] **/
+#loading{
+	width: 100%;
+	text-align: center;
+}
+
+
+/** [ Addition ] **/
+#addition{
+	color: #FFFFFF;
+	cursor: pointer;
+	width: 300px;
+	line-height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border: 1px solid #828282;
+	text-align: center;
+	background-color: #828282;
+}
+
+#addition:hover{
+	border: 1px solid #2A2A2A;
+}
+
+
+/** [ Other day ] **/
+.other-day{
+	margin-top:10px;
+	text-align: center;
+	clear:both;
+}
+
+#previous-day{
+	cursor: pointer;
+	margin-right:50px;
+	border-bottom: 2px solid #FFFFFF;
+}
+
+#previous-day:hover{
+	border-bottom: 2px solid #6F9BC8;
+}
+
+#previous-day:active{
+	border-bottom: 2px solid #EF4F00;
+}
+
+#next-day{
+	cursor: pointer;
+	border-bottom: 2px solid #FFFFFF;
+}
+
+#next-day:hover{
+	border-bottom: 2px solid #6F9BC8;
+}
+
+#next-day:active{
+	border-bottom: 2px solid #EF4F00;
+}
+
+
+/** [ Right sidebar ] **/
+.right-sidebar{
+	width: 150px;
+	margin-top: 20px;
+	text-align: left;
+	float: left;
+}
+
+
+/** [ Footer ] **/
+.footer{
+	width: 100%;
+	clear: both;
+}
+
+.footer-body{
+	width: 950px;
+	padding: 20px 0px 20px 0px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+
+/** [ Address ] **/
+.address{
+	font-size:12px;
+	color: #52799E;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left:30px;
+	text-align: left;
+	text-decoration: none;
+}
+
+.address a{
+	font-size: 12px;
+	text-decoration: none;
+}
+
+
+/*************************
+ *  Error container
+ */
+#error-container{
+	display: none;
+}
+
+
+/*************************
+ *  Help container
+ */
+#help-container{
+	display: none;
+}
+
+
+/*************************
+ *  Help container
+ */
+#terms-container{
+	display: none;
+}
+
+
+/*************************
+ *  Help container
+ */
+#privacy-container{
+	display: none;
+}
+
+
+/*************************
+ *  Help container
+ */
+#cache-container{
+	display: none;
+}
+
+#cache-table{
+	width: 100%;
+	border-color:#FFFFFF;
+}
+
+.cache-line-title th{
+	background-color: #CCCCCC;
+}
+
+.cache-line {
+	cursor: pointer;
+	background-color: #E5E5E5;
+}
+
+.cache-line:hover {
+	background-color: #E0E0E0;
+}
+
+.cache-date-line{
+	cursor: pointer;
+	height: 30px;
+	background-color:#FFFFFF;
+}
+
+.cache-date-line:hover{
+	background-color:#EEEEEE;
+}
+
+.cache-icon{
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+/*************************
+ *  Tweet
+ */
+.tweet{
+	cursor: default;
+	width: 700px;
+	padding: 20px 10px 20px 10px;
+	text-align: left;
+	overflow: hidden;
+	clear: both;
+}
+
+.tweet:hover{
+	background-color: #e5e5e5;
+}
+
+.tweet-body{
+	width: 630px;
+	float: left;
+}
+
+.tweet-icon{
+	margin-right:10px;
+	float: left;
+}
+
+.tweet-username{
+	cursor: pointer;
+	color: #2A2A2A;
+	font-size: 16px;
+	font-weight: 200;
+}
+
+.tweet-username:hover{
+	text-decoration: underline;
+}
+
+.tweet-name{
+	font-size: 12px;
+	color: #A2A2A2;
+}
+
+.tweet-date{
+	font-size: 12px;
+	color: #A2A2A2;
+}
+
+.tweet-source{
+	font-size: 12px;
+	color: #A2A2A2;
+	text-decoration: none;
+}
+
+
+
+/*************************
+ *  Calendar
+ */
+.calendar{
+	position: absolute;
+	border: 1px solid #626262;
+	border-radius: 3px;
+	background: #FFFFFF;
+	text-align: center;
+}
+
+.calendar-day{
+}
+
+.calendar-date{
+	cursor: pointer;
+	font-size: 12px;
+	border: 1px solid #E5E5E5;
+	border-radius: 2px;
+	padding: 2px 5px 2px 15px;
+	background: #FFFFFF;
+}
+
+.calendar-date:hover{
+	color: #FFFFFF;
+	border: 1px solid #52799E;
+	background: #6F9BC8;
+}
+
+
+
+/*************************
+ *  Sections
+ */
+.menu-bar{
+	width: 200px;
+	margin-left: 30px;
+	padding: 0px;
+	text-align: left;
+	list-style-type: none;
+	float: left;
+}
+
+.menu-active{
+	cursor: pointer;
+	border: 1px solid #6F9BC8;
+	padding: 5px 0px 5px 5px;
+	margin-bottom: 5px;
+}
+
+.menu-active:hover{
+	background: #6F9BC8;
+}
+
+.menu-deactive{
+	cursor: pointer;
+	color:#626262;
+	padding: 5px 0px 5px 5px;
+	margin-bottom: 5px;
+	border: 1px solid #FFFFFF;
+}
+
+.menu-deactive:hover{
+	color: #000000;
+	background: #6F9BC8;
+	border: 1px solid #6F9BC8;
+}
+
+.main-section{
+	width:690px;
+	margin-left:20px;
+	margin-top:50px;
+	margin-bottom:50px;
+	text-align:left;
+	float: left;
+}
+
+.paragraph{
+	margin-bottom: 30px;
+}
+
+.view-link{
+	color:#626262;
+	font-size: 12px;
+}
+
+.view-link-a{
+	font-size: 12px;
+}

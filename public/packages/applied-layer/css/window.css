@@ -1,0 +1,481 @@
+﻿/****************************************************
+
+    Applied Layer Style Sheet   version 1.0
+    
+    ( c ) 2011 Saneyuki Tadokoro.
+
+****************************************************/
+
+
+/*
+ * System Structure
+ * 		v.1
+ * 
+ * 		Change these styles for your web pages.
+ */
+
+
+/** [ Base ] **/
+.appl-base
+{
+	cursor: default;
+	position: absolute;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
+
+
+/** [ Title Bar ] **/
+.appl-title-bar
+{
+	width: 100%;
+	height: 45px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	overflow: hidden;
+}
+
+.appl-title
+{
+	height: 45px;
+	line-height: 45px;
+	top: 0px;
+	left: 25px;
+	right: 40px;
+	position: absolute;
+	overflow: hidden;
+}
+
+.appl-icon
+{
+	width: 16px;
+	height: 16px;
+	top: 14px;
+	left: 4px;
+	position: absolute;
+}
+
+
+/** [ Menu Bar ] **/
+.appl-menu-bar
+{
+	width: 100%;
+	min-height: 30px;
+	top: 45px;
+	left: 0px;
+	position: absolute;
+	
+}
+
+.appl-menu-button
+{
+	height: 30px;
+	line-height: 30px;
+	left: 10px;
+	margin-right: 10px;
+	padding: 0px 5px 0px 5px;
+	position: relative;
+	float: left;
+}
+
+.appl-menu
+{
+	position: absolute;
+}
+
+.appl-menu-item-icon
+{
+	width: 16px;
+	padding: 5px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.appl-menu-item-label
+{
+	height: 20px;
+	line-height: 20px;
+	padding: 5px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+
+
+/*
+ * Design
+ * 		v.1
+ * 
+ * 		Change these styles for your web pages.
+ */
+
+
+/** [ Base ] **/
+.appl-base
+{
+    border: 0px solid #000000;
+	text-align: left;
+}
+
+
+/** [ Title Bar ] **/
+.appl-title-bar
+{
+	color: #FFFFFF;
+	background: transparent url(../img/bg_1_db.png);
+	text-align: center;
+}
+
+.appl-title
+{
+}
+
+.appl-icon
+{
+}
+
+
+/** [ Menu Bar ] **/
+.appl-menu-bar
+{
+	color: #FFFFFF;
+	background: #2A2A2A;
+}
+
+.appl-menu-bar:hover{
+}
+
+.appl-menu-button
+{
+}
+
+.appl-menu-button:hover
+{
+	color:#000000;
+	background: url(../img/k.png);
+}
+.appl-menu
+{
+	border: 1px solid #CBCBCB;
+}
+
+.appl-menu-item
+{
+	background: #A2A2A2;
+}
+
+.appl-menu-item:hover
+{
+	background: #A2A2A2 url(../img/k.png);
+}
+
+.appl-menu-item-icon
+{
+	border-right: 1px solid #929292;
+}
+
+.appl-menu-item-label
+{
+	border-left: 1px solid #D2D2D2;
+}
+
+
+/** [ Client Area ] **/
+.appl-client-area
+{
+	color: #FFFFFF;
+	width:100%;
+	top:0px;
+	bottom:0px;
+	position:absolute;
+	background:#2A2A2A;
+	text-align:left;
+	overflow:hidden;
+}
+
+
+/** [ Button ] **/
+.appl-close-button
+{
+	cursor:pointer;
+	width:20px;
+	height:20px;
+	top:22px;
+	right:17px;
+	text-align:center;
+	position:absolute;
+	border:none;
+	background:transparent;
+}
+
+.appl-close-button:hover
+{
+	border:1px solid #000000;
+	background:url(../img/button.png);
+}
+
+.appl-maximize-button
+{
+	cursor:pointer;
+	width:20px;
+	height:20px;
+	top:22px;
+	right:39px;
+	text-align:center;
+	position:absolute;
+	border:none;
+	background:transparent;
+}
+
+.appl-maximize-button:hover
+{
+	border:1px solid #000000;
+	background:url(../img/button.png);
+}
+
+.appl-minimize-button
+{
+	cursor:pointer;
+	width:20px;
+	height:20px;
+	top:22px;
+	right:60px;
+	text-align:center;
+	position:absolute;
+	border:none;
+	background:transparent;
+}
+
+.appl-minimize-button:hover
+{
+	border:1px solid #000000;
+	background:url(../img/button.png);
+}
+
+.appl-fix-button
+{
+	cursor:pointer;
+	width:20px;
+	height:20px;
+	top:22px;
+	right:81px;
+	text-align:center;
+	position:absolute;
+	border:none;
+	background:transparent;
+}
+
+.appl-fix-button:hover
+{
+	border:1px solid #000000;
+	background:url(../img/button.png);
+}
+
+.appl-control-button-img
+{
+    width:15px;
+    height:15px;
+    top:2px;
+    position:relative;
+}
+
+
+/** [ Resize Point ] **/
+.appl-resize-point-upper-left
+{
+	z-index:7;
+    cursor:nw-resize;
+    width:15px;
+    height:15px;
+    top:0px;
+    left:0px;
+    position:absolute;
+    background:transparent;
+}
+
+.appl-resize-point-upper
+{
+	z-index:6;
+    cursor:n-resize;
+    width:100%;
+    height:15px;
+    top:0px;
+    left:0px;
+    position:absolute;
+    background:transparent;
+}
+
+.appl-resize-point-upper-right
+{
+	z-index:7;
+    cursor:ne-resize;
+    width:15px;
+    height:15px;
+    top:0px;
+    right:0px;
+    position:absolute;
+    background:transparent;
+}
+
+.appl-resize-point-left
+{
+	z-index:6;
+    cursor:e-resize;
+    width:15px;
+    height:100%;
+    top:0px;
+    left:0px;
+    position:absolute;
+    background:transparent;
+}
+
+.appl-resize-point-right
+{
+	z-index:6;
+    cursor:e-resize;
+    width:15px;
+    height:100%;
+    top:0px;
+    right:0px;
+    position:absolute;
+    background:transparent;
+}
+
+.appl-resize-point-bottom-left
+{
+	z-index:7;
+    cursor:ne-resize;
+    width:15px;
+    height:15px;
+    bottom:0px;
+    left:0px;
+    position:absolute;
+    background:transparent;
+}
+
+.appl-resize-point-bottom
+{
+	z-index:6;
+    cursor:n-resize;
+    width:100%;
+    height:15px;
+    bottom:0px;
+    left:0px;
+    position:absolute;
+    background:transparent;
+}
+
+.appl-resize-point-bottom-right
+{
+	z-index:7;
+    cursor:nw-resize;
+    width:15px;
+    height:15px;
+    bottom:0px;
+    right:0px;
+    position:absolute;
+    background:transparent;
+}
+
+
+/** [ Frames ] **/
+.appl-frame
+{
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	position:absolute;
+}
+
+.appl-frame-upper-left
+{
+	width:10px;
+	height:10px;
+	top:0px;
+	left:0px;
+	position:absolute;
+	background:transparent url(../img/topleft.png);
+}
+
+.appl-frame-upper
+{
+	height:10px;
+	top:0px;
+	left:10px;
+	right:10px;
+	position:absolute;
+	background:transparent url(../img/top.png);
+}
+
+.appl-frame-upper-right
+{
+	width:10px;
+	height:10px;
+	top:0px;
+	right:0px;
+	position:absolute;
+	background:transparent url(../img/topright.png);
+}
+
+.appl-frame-left
+{
+	width:10px;
+	top:10px;
+	bottom:10px;
+	left:0px;
+	position:absolute;
+	background:transparent url(../img/left.png);
+}
+
+.appl-frame-center
+{
+	top:10px;
+	bottom:10px;
+	left:10px;
+	right:10px;
+	position:absolute;
+	background:transparent url(../img/bg_4_db.png);
+}
+
+.appl-frame-right
+{
+	width:10px;
+	top:10px;
+	bottom:10px;
+	right:0px;
+	position:absolute;
+	background:transparent url(../img/right.png);
+}
+
+.appl-frame-bottom-left
+{
+	width:10px;
+	height:10px;
+	bottom:0px;
+	left:0px;
+	position:absolute;
+	background:transparent url(../img/bottomleft.png);
+}
+
+.appl-frame-bottom
+{
+	height:10px;
+	bottom:0px;
+	left:10px;
+	right:10px;
+	position:absolute;
+	background:transparent url(../img/bottom.png);
+}
+
+.appl-frame-bottom-right
+{
+	width:10px;
+	height:10px;
+	bottom:0px;
+	right:0px;
+	position:absolute;
+	background:transparent url(../img/bottomright.png);
+}
